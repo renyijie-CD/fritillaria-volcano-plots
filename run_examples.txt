@@ -1,0 +1,16 @@
+# Example commands for reproducing volcano plots
+
+# Install dependencies first:
+# python -m pip install numpy pandas matplotlib openpyxl
+
+# FW-B vs FW-F
+python volcano_plot.py -i volcano_plot_data_tables/volcano_stats_FW-B_vs_FW-F.xlsx -o FW-B_vs_FW-F --xlim=-4.0,4.5 --ylim=0,8.8 --color-vmin=-3.5 --color-vmax=4.0 --point-size=42
+
+# F-B vs F-F
+python volcano_plot.py -i volcano_plot_data_tables/volcano_stats_F-B_vs_F-F.xlsx -o F-B_vs_F-F --xlim=-4.0,6.6 --ylim=0,14.0 --color-vmin=-3.5 --color-vmax=4.0 --point-size=42
+
+# FW-B vs F-B
+python volcano_plot.py -i volcano_plot_data_tables/volcano_stats_FW-B_vs_F-B.xlsx -o FW-B_vs_F-B --xlim=-4.0,4.5 --ylim=0,8.8 --color-vmin=-3.5 --color-vmax=4.0 --point-size=42
+
+# FW-F vs F-F
+python volcano_plot.py -i volcano_plot_data_tables/volcano_stats_FW-F_vs_F-F.xlsx -o FW-F_vs_F-F --xlim=-4.0,4.5 --ylim=0,8.8 --color-vmin=-3.5 --color-vmax=4.0 --point-size=42
